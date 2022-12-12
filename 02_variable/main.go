@@ -1,3 +1,4 @@
+// 変数，定数の学習
 package main
 
 import "fmt"
@@ -11,21 +12,23 @@ const (
 )
 
 func main() {
+	// 変数
 	var t, f bool = true, false
 	var (
 		f64   float64 = 1.2
 		s, sr string  = "test", "Yes"
 	)
 	fmt.Println(i, f64, s, sr, t, f)
-
 	yi := 1
 	yf64 := 1.2
 	xs := "test"
 	xt := true
 	fmt.Println(yi, yf64, xs, xt)
 
+	// 定数
 	fmt.Println(Pi, Username, Password)
 
+	// 変数の型
 	var (
 		u8  uint8     = 255
 		i8  int8      = 127

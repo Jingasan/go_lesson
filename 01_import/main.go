@@ -1,3 +1,4 @@
+// importの学習
 package main
 
 import (
