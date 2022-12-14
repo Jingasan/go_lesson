@@ -1,4 +1,4 @@
-// 論理値型の練習
+// lesson5: 論理値型の練習
 package main
 
 import "fmt"
