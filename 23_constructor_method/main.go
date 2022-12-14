@@ -1,4 +1,5 @@
 // lesson23: コンストラクタとメソッドの練習
+// Goにclassは存在しない
 package main
 
 import "fmt"
@@ -8,7 +9,7 @@ type Vertex struct {
 }
 
 // 関数
-func Area(v Vertex) int {
+func Area(v *Vertex) int {
 	return v.X * v.Y
 }
 
@@ -32,8 +33,13 @@ func (v Vertex) Area() int {
 	return v.X * v.Y
 }
 
+// コンストラクタ
+func New(x, y int) *Vertex {
+	return &Vertex{x, y}
+}
+
 func main() {
-	v := Vertex{3, 4}
+	v := New(3, 4)
 	fmt.Println(Area(v))
 	v.ScaleV(10)
 	fmt.Println(v.Area())
