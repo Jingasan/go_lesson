@@ -1,4 +1,10 @@
 // lesson32: producerとconsumerの練習
+// producer
+//   様々な処理を並列で行う処理
+//   (ex) 色々なサーバーに行き、logを取ってきて解析したりする
+//   処理が終わったらchannelに値を送信する
+// consumer
+//   channelから受け取った値を処理する
 package main
 
 import (
