@@ -2,9 +2,10 @@
 package main
 
 import (
-	"36_package/greeting"
-	"36_package/sample"
 	"fmt"
+
+	"github.com/Jingasan/go_package/36_package/greeting"
+	"github.com/Jingasan/go_package/36_package/sample"
 )
 
 func main() {
